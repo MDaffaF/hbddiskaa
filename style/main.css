@@ -96,12 +96,13 @@ html {
   
   
   .six {
-    position: relative;
-    top: 10vh; /* Geser ke bawah dari atas layar, atur sesuai kebutuhan */
-    text-align: center;
+    position: fixed;      /* Tetap di atas meskipun halaman digulir */
+    top: 0;               /* Tepat di bagian paling atas */
+    left: 0;
     width: 100vw;
+    text-align: center;
     margin: 0 auto;
-    z-index: 1;
+    z-index: 9999;        /* Pastikan tampil di atas elemen lain */
   }
   
   .six img.profile-picture {
