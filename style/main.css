@@ -96,13 +96,15 @@ html {
   
   
   .six {
-    position: fixed;      /* Tetap di atas meskipun halaman digulir */
-    top: 0;               /* Tepat di bagian paling atas */
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100vw;
     text-align: center;
     margin: 0 auto;
-    z-index: 9999;        /* Pastikan tampil di atas elemen lain */
+    z-index: 9999;
+    background-color: #fff; /* opsional: untuk jaga-jaga kalau ada elemen transparan */
+    padding-top: 20px; /* opsional, agar gambar tidak terlalu nempel ke atas */
   }
   
   .six img.profile-picture {
@@ -111,6 +113,8 @@ html {
     max-height: 350px;
     display: block;
     margin: 0 auto;
+    z-index: 10000; /* pastikan tampil di atas */
+    position: relative;
   }
   
   .six .hat {
